@@ -1,0 +1,299 @@
+/* CROSS CHECK CALCULATOR:
+   BY: RON MANN
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    /* CROSS CHECK CALCULATOR   */
+    char Skid_ID[6];        // Initial value entered by user.
+    int Temp[6];            // Placeholder for char to int conversion.
+
+
+    int Temp_Sum[6];        // Placeholder for values after calculation.
+    int Xcheck = 0;             // CROSS_CHECK TOTAL.
+
+    cout << "Enter six digit Skid-ID : " << endl;
+    cout << "Remember to add two zeros first" << endl;
+
+    cin >> Skid_ID[0];
+    cin >> Skid_ID[1];
+    cin >> Skid_ID[2];
+    cin >> Skid_ID[3];
+    cin >> Skid_ID[4];
+    cin >> Skid_ID[5];
+
+/* FIRST ENTERED SKID ID # */
+    switch(Skid_ID[0])
+    {
+    case '0':
+        Temp[0] = 0;
+        break;
+    case '1':
+        Temp[0] = 1;
+        break;
+    case '2':
+        Temp[0] = 2;
+        break;
+    case '3':
+        Temp[0] = 3;
+        break;
+    case '4':
+        Temp[0] = 4;
+        break;
+    case '5':
+        Temp[0] = 5;
+        break;
+    case '6':
+        Temp[0] = 6;
+        break;
+    case '7':
+        Temp[0] = 7;
+        break;
+    case '8':
+        Temp[0] = 8;
+        break;
+    case '9':
+        Temp[0] = 9;
+        break;
+    default:
+        cout << "Please enter the correct type of data" << endl;
+    }
+    // Output test uncomment next line.
+    //cout << Temp[0];
+
+/* SECOND ENTERED SKID # */
+
+    switch(Skid_ID[1])
+    {
+    case '0':
+        Temp[1] = 0;
+        break;
+    case '1':
+        Temp[1] = 1;
+        break;
+    case '2':
+        Temp[1] = 2;
+        break;
+    case '3':
+        Temp[1] = 3;
+        break;
+    case '4':
+        Temp[1] = 4;
+        break;
+    case '5':
+        Temp[1] = 5;
+        break;
+    case '6':
+        Temp[1] = 6;
+        break;
+    case '7':
+        Temp[1] = 7;
+        break;
+    case '8':
+        Temp[1] = 8;
+        break;
+    case '9':
+        Temp[1] = 9;
+        break;
+    default:
+        cout << "Please enter the correct type of data" << endl;
+    }
+    // Uncomment next line for test output.
+    //cout << Temp[1];
+
+/* THIRD ENTERED SKID # */
+
+    switch(Skid_ID[2])
+    {
+    case '0':
+        Temp[2] = 0;
+        break;
+    case '1':
+        Temp[2] = 1;
+        break;
+    case '2':
+        Temp[2] = 2;
+        break;
+    case '3':
+        Temp[2] = 3;
+        break;
+    case '4':
+        Temp[2] = 4;
+        break;
+    case '5':
+        Temp[2] = 5;
+        break;
+    case '6':
+        Temp[2] = 6;
+        break;
+    case '7':
+        Temp[2] = 7;
+        break;
+    case '8':
+        Temp[2] = 8;
+        break;
+    case '9':
+        Temp[2] = 9;
+        break;
+    default:
+        cout << "Please enter the correct type of data" << endl;
+    }
+    // Uncomment the next line for test output.
+    //cout << Temp[2];
+/* FOURTH ENTERED SKID #    */
+
+    switch(Skid_ID[3])
+    {
+    case '0':
+        Temp[3] = 0;
+        break;
+    case '1':
+        Temp[3] = 1;
+        break;
+    case '2':
+        Temp[3] = 2;
+        break;
+    case '3':
+        Temp[3] = 3;
+        break;
+    case '4':
+        Temp[3] = 4;
+        break;
+    case '5':
+        Temp[3] = 5;
+        break;
+    case '6':
+        Temp[3] = 6;
+        break;
+    case '7':
+        Temp[3] = 7;
+        break;
+    case '8':
+        Temp[3] = 8;
+        break;
+    case '9':
+        Temp[3] = 9;
+        break;
+    default:
+        cout << "Please enter the correct type of data" << endl;
+    }
+
+    // Uncomment the next line for test output.
+    //cout << Temp[3];
+
+/* FIFTH ENTERED SKID # */
+
+    switch(Skid_ID[4])
+    {
+    case '0':
+        Temp[4] = 0;
+        break;
+    case '1':
+        Temp[4] = 1;
+        break;
+    case '2':
+        Temp[4] = 2;
+        break;
+    case '3':
+        Temp[4] = 3;
+        break;
+    case '4':
+        Temp[4] = 4;
+        break;
+    case '5':
+        Temp[4] = 5;
+        break;
+    case '6':
+        Temp[4] = 6;
+        break;
+    case '7':
+        Temp[4] = 7;
+        break;
+    case '8':
+        Temp[4] = 8;
+        break;
+    case '9':
+        Temp[4] = 9;
+        break;
+    default:
+        cout << "Please enter the correct type of data" << endl;
+    }
+
+    // Uncomment the next line for output data of fifth number.
+    //cout << Temp[4];
+
+/* SIXTH ENTERED SKID # */
+
+    switch(Skid_ID[5])
+    {
+    case '0':
+        Temp[5] = 0;
+        break;
+    case '1':
+        Temp[5] = 1;
+        break;
+    case '2':
+        Temp[5] = 2;
+        break;
+    case '3':
+        Temp[5] = 3;
+        break;
+    case '4':
+        Temp[5] = 4;
+        break;
+    case '5':
+        Temp[5] = 5;
+        break;
+    case '6':
+        Temp[5] = 6;
+        break;
+    case '7':
+        Temp[5] = 7;
+        break;
+    case '8':
+        Temp[5] = 8;
+        break;
+    case '9':
+        Temp[5] = 9;
+        break;
+    default:
+        cout << "Please enter the correct type of data" << endl;
+    }
+
+    // Uncomment the next line for sixth digit output test.
+    //cout << Temp[5];
+/* END CHARACTER TO INTEGER CONVERSIONS.    */
+
+    if(Temp[0] > 0)
+    {
+        Temp_Sum[0] = Temp[0] * 0;
+    }
+    if(Temp[1] > 0)
+    {
+        Temp_Sum[1] = Temp[1] * 1;
+    }
+
+    Temp_Sum[2] = Temp[2] * 2;
+    Temp_Sum[3] = Temp[3] * 3;
+    Temp_Sum[4] = Temp[4] * 4;
+    Temp_Sum[5] = Temp[5] * 5;
+
+    // Add All variables together and assign the sum to Xcheck.
+
+    Xcheck = Temp_Sum[2] + Temp_Sum[3] + Temp_Sum[4] + Temp_Sum[5];
+    /*for(int i = 0; i <= 6; i++)
+    {
+        Xcheck = Temp_Sum[i] + Temp_Sum[i++];
+    }
+    */
+    cout << "Cross Check is: " << Xcheck;
+
+    cout << "\n\n";
+
+
+    return 0;
+}
